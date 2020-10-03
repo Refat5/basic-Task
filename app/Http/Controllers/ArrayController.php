@@ -13,7 +13,19 @@ class ArrayController extends Controller
      */
     public function index()
     {
-        //
+        $student = array (
+            array("class_1"=>
+                array("Jubair",20),
+                array("Ashik",32)),
+            array("class 2"=>
+                array("Refat",33),
+                array("Tanvir",44)),
+            array("class 3" =>
+                 array("Tanvir",55),
+                 array("Jubair",66))
+          );
+
+          return view('Pages.Array.index',compact('student'));
     }
 
     /**
